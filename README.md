@@ -44,3 +44,6 @@ git push -u origin main
 - git checkout <file_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
 - git merge <branch_name> : merge branch to main -> ex) git merge new_branch
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
+
+
+-> added data from remote
