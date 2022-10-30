@@ -37,6 +37,7 @@ git push -u origin main
 - git mreote show : show all
 - git remote rename <old_name> <new_name> : change remoto-repo's name
 - git remote remove <remote-repo_name>
+- git remote fetch <remote_name> : bring all the data from remote-repo ex) git remote fetch origin
 
 ### new branch
 
