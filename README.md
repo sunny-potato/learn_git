@@ -14,7 +14,7 @@
 - git log : check if commit is updated well or not
 - git diff : see the differences between before and after change of the file
 - git remote (--help to pop up nanual page in browser ), (add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>)
-- git pull
+- git pull (git pull = git fetch + git merge)
 - git push (--all)
 - git merge ("branch_name" to merge branch to main-> when conflict, modify or decide what i will take(git add or git merge -- abort),
 - git checkout ("branch_name" to change to the branch), (-b "branch_name" to create new branch)
@@ -30,14 +30,23 @@ git branch -M main
 git remote add origin https://github.com/sunny-potato/typingGame.git
 git push -u origin main
 
+### Check remote-repo
+
+- git remote
+
 ### Create new branch
 
 - git branch <file_name> ex) git branch new_branch
 
 ### Switch to bracn/main
 
-- # git checkout <file_name> ex) git checkout new_branch or git checkout main
+- git checkout <file_name> ex) git checkout new_branch or git checkout main
 
-----> some changes in branch
+### Merge branch to main
 
-> > > > > > > new_branch
+- git merge <branch_name> ex) git merge new_branch
+
+### Merge conflict
+
+- git add or git merge -- abort
+- it can be modified manually or decided merge by using the command
