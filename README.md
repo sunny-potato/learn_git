@@ -30,12 +30,10 @@ git branch -M main
 git remote add origin https://github.com/sunny-potato/typingGame.git
 git push -u origin main
 
-# Create new branch
+### Create new branch
 
 - git branch <file_name> ex) git branch new_branch
 
-# Switch to bracn/main
+### Switch to bracn/main
 
 - git checkout <file_name> ex) git checkout new_branch or git checkout main
-
------> this is test for some changes in branch
