@@ -30,23 +30,17 @@ git branch -M main
 git remote add origin https://github.com/sunny-potato/typingGame.git
 git push -u origin main
 
-### Check remote-repo
+### remote-repo
 
-- git remote
+- git remote : show name of remote-repo
+- git remote -v : show addresss of remote-repo
+- git mreote show : show all
+- git remote rename <old_name> <new_name> : change remoto-repo's name
+- git remote remove <remote-repo_name>
 
-### Create new branch
+### new branch
 
-- git branch <file_name> ex) git branch new_branch
-
-### Switch to bracn/main
-
-- git checkout <file_name> ex) git checkout new_branch or git checkout main
-
-### Merge branch to main
-
-- git merge <branch_name> ex) git merge new_branch
-
-### Merge conflict
-
-- git add or git merge -- abort
-- it can be modified manually or decided merge by using the command
+- git branch <file_name> : create new branch -> ex) git branch new_branch
+- git checkout <file_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
+- git merge <branch_name> : merge branch to main -> ex) git merge new_branch
+- (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
