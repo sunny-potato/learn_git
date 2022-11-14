@@ -2,6 +2,9 @@
 
 ## <<<<<<< HEAD
 
+- origin = remote
+- master = local
+
 - git status
 - git config
 - git init
@@ -34,9 +37,10 @@ git push -u origin main
 
 - git remote : show name of remote-repo
 - git remote -v : show addresss of remote-repo
-- git mreote show : show all
+- git remote show : show all
 - git remote rename <old_name> <new_name> : change remoto-repo's name
 - git remote remove <remote-repo_name>
+- git remote update : update information on remote
 
 ### new branch
 
@@ -44,6 +48,9 @@ git push -u origin main
 - git checkout <file_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
 - git merge <branch_name> : merge branch to main -> ex) git merge new_branch
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
+- git branch : list of local branches
+- git branch -r : list of  local + remote branches
+- gir branch -v :
 
 
 -> added data from remote
