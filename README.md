@@ -39,7 +39,7 @@ git push -u origin main
 - git remote -v : show addresss of remote-repo
 - git remote show : show all
 - git remote rename <old_name> <new_name> : change remoto-repo's name
-- git remote remove <remote-repo_name>
+- git remote remove <remote-repo_name> : remove connection to remote ->  ex) git remote remove origin
 - git remote update : update information on remote
 
 ### new branch
