@@ -50,7 +50,8 @@ git push -u origin main
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
 - git branch : list of local branches
 - git branch -r : list of  local + remote branches
-- gir branch -v :
+- git branch -v :
+- git branch -d <branch_name> : delete branch -> ex) git branch -d new_branch 
 
 
 -> added data from remote
