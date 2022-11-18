@@ -8,7 +8,7 @@
 ### Git basics  
 - git status
 - git config
-- git init :
+- git init : creates a new git repository
 - git rm <file_name> : Remove file, which mean git will not manage the file
 - git add <option> : add modified files to the staging area (--all / -u) -> ex) git add --all 
 - git restore --staged <file> : file from the staging area to unstaging area
