@@ -1,11 +1,11 @@
 # Learning git
 
-### concept 
+### Concept 
 - origin = remote repository
 - master = local repository 
 
 
-### git basics  
+### Git basics  
 - git status
 - git config
 - git init :
@@ -27,7 +27,7 @@
 - git revert : go back to previously committed file with all uncommitted changes (useful when teamarbeid)
 
 
-### basic command
+### Basic command
 git init
 git add README.md
 git commit -m "first commit"
@@ -36,7 +36,7 @@ git remote add origin <web_url>
 git push -u origin main
 
 
-### remote-repo
+### Remote-repo
 - git remote : show name of remote-repo
 - git remote -v : show addresss of remote-repo
 - git remote show : show all
@@ -46,7 +46,7 @@ git push -u origin main
 - git remote add <option> <remote_name> <url> : add remote to local ([-t <branch>] [-m <master>])
                                             
 
-### branch
+### Branch
 - git branch <file_name> : create new branch -> ex) git branch new_branch
 - git checkout <file_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
 - git branch -d <branch_name> : delete branch -> ex) git branch -d new_branch 
@@ -58,4 +58,7 @@ git push -u origin main
 - git branch -vv :
 
 
-
+#### master and main in github
+- problem : when files in local master are pushed to remote repository, it will be branch in github but not avaible to merge them into main in remote repository
+- solution : settings in remote repository change default branch from main to master
+  
