@@ -46,5 +46,16 @@ git push -u origin main
 - git merge <branch_name> : merge branch to main -> ex) git merge new_branch
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
 
-
 -> added data from remote
+
+### stash
+
+: when I want to save current modified files and then go back to the files before their change.
+the modified files are saved in stack
+
+- git stash : save current modified files. after that working directory will be clean (possible to do several stash)
+- git stash list : check stash list
+- git stash apply : bring the latest stash or
+- git stash apply <stash_name>
+- git stash drop : remove stash saved in stacks
+  git stash pop : git stash apply + apply
