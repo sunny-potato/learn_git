@@ -42,12 +42,13 @@ git push -u origin main
 ### new branch
 
 - git branch : show the list of branches
-- git branch <file_name> : create new branch -> ex) git branch new_branch
-- git checkout <file_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
-- git merge <branch_name> : merge branch to main from main -> ex) git merge new_branch
+- git branch <branch_name> : create new branch -> ex) git branch new_branch
+- git checkout <branch_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
+- git merge <branch_name> : merge branch to main from main -> ex) git merge new_branch (in main)
 - git push -u origin new_branch : create a new branch named "new_branch" in remote and push code to the new branch
   (when commando "git push"after it above, automatically push to the new branch)
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
+- git rebase <main/master_name> : to bring the latest code from main/master -> ex) git rebase main (in branch)
 
 ### stash
 
