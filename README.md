@@ -76,4 +76,5 @@
 1. git log --pretty=oneline : Check the history of commits on the working branch.
 2. git rebase -i HEAD~<Number_of_commit> : Specify the number of commits I want to squash.
 3. Choose to "pick" or "squash" commits. This action combines the commits as desired.
-4. Enter a new commit message at the top of the file that appears.
+4. Enter a new commit message at the top of the file that appears and close the file.
+5. Check the squashed commit by using "git log --pretty=oneline"
