@@ -1,7 +1,11 @@
 # Learning git
 
-## <<<<<<< HEAD
+## Basics
 
+### Log
+
+- git log : check if commit is updated well or not
+- git log --pretty=oneline (to exit it, type "q")
 - git status
 - git config
 - git init
@@ -11,7 +15,7 @@
 - git commit (-m 'commit_description') (without -m, "vi" editor worked so to quit the editor, press button "ESC"adn then write commit ":wp" (write, quit))
   => git commit -a = git add
   => git commit -am = git add & commit at the same time
-- git log : check if commit is updated well or not
+
 - git diff : see the differences between before and after change of the file
 - git remote (--help to pop up nanual page in browser ), (add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>)
 - git pull (git pull = git fetch + git merge)
@@ -21,16 +25,8 @@
 
 - git reset : go back to previously committed file without all uncommitted changes
 - git revert : go back to previously committed file with all uncommitted changes (useful when teamarbeid)
-- git branch ("branch_name")
 
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/sunny-potato/typingGame.git
-git push -u origin main
-
-### remote-repo
+### Remote-repo
 
 - git remote : show name of remote-repo
 - git remote -v : show addresss of remote-repo
@@ -39,25 +35,45 @@ git push -u origin main
 - git remote remove <remote-repo_name>
 - git remote fetch <remote_name> : bring all the data from remote-repo ex) git remote fetch origin
 
-### new branch
+### Rebase
+
+### Branch
 
 - git branch : show the list of branches
-- git branch <branch_name> : create new branch -> ex) git branch new_branch
-- git checkout <branch_name> : switch to new branch/main -> ex) git checkout new_branch or git checkout main
-- git merge <branch_name> : merge branch to main from main -> ex) git merge new_branch (in main)
-- git push -u origin new_branch : create a new branch named "new_branch" in remote and push code to the new branch
+- git branch <branch\*name> : create new branch _For exemple git branch <new_branch>_
+- git checkout <branch\*name> : switch to new branch/main _For exemple git checkout <new\*branch> or git checkout main_
+- git merge <branch\*name> : merge branch to main from main _For exemple git merge <new\*branch> (in main)_
+- git push -u origin <new_branch> : create a new branch named "new_branch" in remote and push code to the new branch
   (when commando "git push"after it above, automatically push to the new branch)
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
-- git rebase <main/master_name> : to bring the latest code from main/master -> ex) git rebase main (in branch)
+- git rebase <main/master\*name> : to bring the latest code from main/master _For exemple git rebase main (in branch)_
 
-### stash
+### Stash
 
-: when I want to save current modified files and then go back to the files before their change.
-the modified files are saved in stack
+: **When I want to save the current modified files and then revert back to the files before their change, stash can be used**
 
-- git stash : save current modified files. after that working directory will be clean (possible to do several stash)
-- git stash list : check stash list
+- git stash: Save the current modified files. After that, the working directory will be clean. I can do this multiple times to create multiple stashes.
+- git stash list: Check the stash list to see the saved stashes.
 - git stash apply : bring the latest stash or
-- git stash apply <stash_name>
-- git stash drop : remove stash saved in stacks
-  git stash pop : git stash apply + apply
+- git stash apply : Bring the latest stash, or alternatively, I can specify the stash name with "git stash apply <stash_name>".
+- git stash drop: Remove the latest stash from the stash stack.
+- git stash pop: It applies the latest stash and then removes it from the stash stack.(git stash apply + git stash drop.)
+
+: **When merging updated code from the remote repository while I am working on a branch, follow these steps**
+
+1. git stash: Save the current files on the branch.
+2. git stash list: Check if the files are saved in the stash.
+3. git checkout main: Move back to the main branch.
+4. git pull (git fetch + git merge): Fetch and merge the updated code from the remote repository into the main branch.
+5. git checkout <branch_name>: Move back to the working branch.
+6. git merge main: Merge the changes fetched from the main branch into the working branch.
+7. git stash apply: Apply the changes saved in the stash to the working directory.
+
+### Sqaush
+
+: Combine commits that were worked on in the local repository before merging into the remote repository.
+
+1. git log --pretty=oneline : Check the history of commits on the working branch.
+2. git rebase -i HEAD~<Number_of_commit> : Specify the number of commits I want to squash.
+3. Choose to "pick" or "squash" commits. This action combines the commits as desired.
+4. Enter a new commit message at the top of the file that appears.
