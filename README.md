@@ -34,19 +34,28 @@
 - git remote rename <old_name> <new_name> : change remoto-repo's name
 - git remote remove <remote-repo_name>
 - git remote fetch <remote_name> : bring all the data from remote-repo ex) git remote fetch origin
+- git remote update
 
 ### Rebase
 
 ### Branch
 
-- git branch : show the list of branches
-- git branch <branch\*name> : create new branch _For exemple git branch <new_branch>_
-- git checkout <branch\*name> : switch to new branch/main _For exemple git checkout <new\*branch> or git checkout main_
-- git merge <branch\*name> : merge branch to main from main _For exemple git merge <new\*branch> (in main)_
-- git push -u origin <new_branch> : create a new branch named "new_branch" in remote and push code to the new branch
+- git branch : Show the list of local branches
+- git branch -r : Show the list of remote branches
+- git branch -a : Show the list of local + remote branches
+- git branch -d <branch-name> : Delete the branch
+- git branch <branch-name> : Create a new branch
+- git checkout <branch-name> : Switch to the branch
+- git merge <branch-name> : merge branch to main from main _For exemple git merge <new-branch> (in main)_
+- git push -u origin <new-branch> : create a new branch named "new_branch" in remote and push code to the new branch
   (when commando "git push"after it above, automatically push to the new branch)
 - (Merge conflict) git add or git merge -- abort : it can be modified manually or decided merge by the command
-- git rebase <main/master\*name> : to bring the latest code from main/master _For exemple git rebase main (in branch)_
+- git rebase <main/master-name> : to bring the latest code from main/master _For exemple git rebase main (in branch)_
+
+:**Fetch code from a remote branch to a local branch**
+
+- git checkout -t <remote-branch-name>: Create a new local branch with the same name as the remote branch and check out to the new local branch
+- git checkout -b <new-local-branch-name> <remote-branch-name> : Create a new local branch with a new name for thelocal branch
 
 ### Stash
 
@@ -78,3 +87,5 @@
 3. Choose to "pick" or "squash" commits. This action combines the commits as desired.
 4. Enter a new commit message at the top of the file that appears and close the file.
 5. Check the squashed commit by using "git log --pretty=oneline"
+
+### Cherry-pick
