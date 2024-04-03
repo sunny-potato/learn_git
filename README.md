@@ -90,4 +90,6 @@
 
 ### Cherry-pick
 
-this is test
+### Close pull request and send a new pull request
+
+1. Close the pull request on the remote repository.
