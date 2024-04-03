@@ -89,3 +89,5 @@
 5. Check the squashed commit by using "git log --pretty=oneline"
 
 ### Cherry-pick
+
+### Close pull request and send a new pull request
