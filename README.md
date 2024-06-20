@@ -30,13 +30,13 @@
 
 - git remote : show name of remote-repo
 - git remote -v : show addresss of remote-repo
-  ** -v stands for verdose (=providing more detailed information) **
+    ** -v stands for verdose (=providing more detailed information) **
 - git remote show : show all
 - git remote rename <old_name> <new_name> : change remoto-repo's name
 - git remote remove <remote-repo_name>
 - git remote fetch <remote_name> : bring all the data from remote-repo ex) git remote fetch origin
 - git remote update
-- git remote set-url origin <git-url>: change the url of the origin remote ex) git remote set-url origin https://github.com/sunny-potato/nest.git
+- git remote set-url origin <git-url>: change the url of the origin remote ex) git remote set-url origin https://github.com/sunny-potato/test.git
 
 ### Rebase
 
